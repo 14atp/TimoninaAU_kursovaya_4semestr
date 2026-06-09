@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Главная" />
+        <item
+            android:id="@+id/nav_create_guide"
+            android:title="Создать гайд" />
+        <item
+            android:id="@+id/nav_account"
+            android:title="Аккаунт" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Настройки" />
+    </group>
+    <group android:id="@+id/nav_admin_classes">
+        <!-- админ-пункты -->
+        <item
+            android:id="@+id/nav_admin_users"
+            android:title="Блокировка пользователей" />
+        <item
+            android:id="@+id/nav_admin_games"
+            android:title="Добавить игру" />
+    </group>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Выход из аккаунта"
+        android:icon="@drawable/ic_logout" />
+
+</menu>

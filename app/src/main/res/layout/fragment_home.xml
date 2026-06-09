@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- поиск -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Поиск"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <!-- кнопка добавления фильтра -->
+    <TextView
+        android:id="@+id/tvAddFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ добавить фильтр"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:textColor="#4b5320"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- контейнер для активных фильтров (chip'ы) -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" />
+
+    <!-- сообщение, если нет гайдов -->
+    <TextView
+        android:id="@+id/tvEmptyMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Гайдов пока нет.\nСтаньте первым, кто создаст гайд!"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#888"
+        android:visibility="gone" />
+
+    <!-- список гайдов -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

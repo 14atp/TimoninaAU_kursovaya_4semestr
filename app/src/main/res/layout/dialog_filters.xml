@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="сортировка"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioNewest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новые"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioOldest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Старые" />
+
+        <RadioButton
+            android:id="@+id/radioAlphabet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="По алфавиту" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="По игре"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnApplyFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Применить" />
+
+</LinearLayout>
